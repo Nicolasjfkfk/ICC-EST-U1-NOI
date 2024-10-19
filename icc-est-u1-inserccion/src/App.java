@@ -1,8 +1,10 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        MetodoOrdenamiento ordenar = new MetodoOrdenamiento();
-        int[] arreglo = { 3, 5, 1, 2, 4 };
-        int[] arregloOrdenado = ordenar.sortInsertion(arreglo, true);
-        ordenar.printArray(arregloOrdenado);
+        // Instanciamos la clase
+        MetodoOrdenamientoInsercion ordenar = new MetodoOrdenamientoInsercion();
+        boolean imprimir = true;
+        int[] arreglo = {5, 9, 2, 7, 4, 10};
+        ordenar.sortInsercion(arreglo, imprimir);
+        ordenar.inprimirArray(arreglo);
     }
 }
